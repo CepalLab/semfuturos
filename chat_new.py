@@ -59,7 +59,7 @@ def initialize_model():
         model_name="gpt-5-nano",
         #model_name="gpt-4o", 
         openai_api_key=openai_api_key, 
-        temperature=0, 
+        temperature=0.1, 
         streaming=True
     )
     return model
@@ -123,3 +123,4 @@ if st.button("Limpiar historial"):
         st.session_state.messages = []
     
     st.rerun()
+
